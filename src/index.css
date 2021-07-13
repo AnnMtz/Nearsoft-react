@@ -1,13 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background: #d3d3d36e;
+}
+
+#interview {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 37px;
+}
+
+.container{
+  width: 52%;
+  border: solid #d3d3d33d;
+  background: whitesmoke;
+  margin: auto;
+  height: 29rem;
+  margin-bottom: 80px;
+}
+
+#input-container{
+  background: white;
+  margin: 20px auto;
+  width: 62%;
+  height: 24rem;
+  border: solid #d3d3d326;
+  border-radius: 2px;
+}
+
+#circles-container{
+  display: flex;
+  flex-direction: row;
+  background: lightgray;
+}
+
+#circles {
+  display: inline-flex;
+}
+#red-circle {
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 1000px;
+  margin: 5px 2px 5px 5px;
+}
+
+#yellow-circle{
+  width: 10px;
+  height: 10px;
+  background: rgb(233, 233, 3);
+  border-radius: 1000px;
+  margin: 5px 3px 5px 3px;
+}
+
+#green-circle{
+  width: 10px;
+  height: 10px;
+  background: rgb(60, 255, 0);
+  border-radius: 1000px;
+  margin: 5px 3px 5px 3px;
+}
+
+#character{
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+}
+
+#title{
+  background: #d3d3d342;
+  border: #d3d3d342 solid;
+  border-radius: 5px;
+  margin-top: 5rem;
+  height: 2rem;
+  width: 58%;
+  padding-left: 10px;
+}
+
+/*Main.js*/
+#error-text{
+  color: red;
+  font-weight: bold;
+}
+
+.suggestion:hover{
+  cursor: pointer;
+  background: gray;
+}
+
+#result-title{
+  border: #d3d3d342 solid;
+  border-radius: 2px;
+  height: 39px;
+  width: 80%;
+  margin: 50px auto 8px;
+}
+
+#result-text{
+  margin-top: 7px;
+  font-size: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+#result-container{
+  border: solid #76d4cf42;
+  background: #76d4cf2b;
+  height: 30px;
+  width: 80%;
+  margin: 8px auto;
+}
+
+#result-text{
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  padding-left: 1px;
+  width: 100%;
 }
